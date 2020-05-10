@@ -7,3 +7,5 @@ for i in range(len(list)-1):
             list[j],list[j+1] = list[j+1],list[j]
 
 print(list)
+
+# 稍微改了改
