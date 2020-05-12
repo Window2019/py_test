@@ -21,3 +21,15 @@ class GAME:
 g = GAME()
     #调用打斗方法，并且赋值 敌人的生命和攻击力
 g.fight(800,1000)
+
+class houyi(GAME):
+    def __init__(self):
+        self.defense = 100
+    def defense(self,enemy_power,enemy_hp):
+        final_hp = self.hp +self.defense - enemy_power
+        enemy_final_hp = enemy_hp - self.power
+        # 比较我和敌人的最终生命
+        if final_hp > enemy_final_hp:
+            print("winner")
+        else:
+            print("lose")
